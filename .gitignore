@@ -1,0 +1,29 @@
+# Node.js 依赖
+node_modules/
+
+# 构建产物
+dist/
+build/
+
+# 临时文件
+*.log
+*.tmp
+*.swp
+*.swo
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# IDE/编辑器配置
+.vscode/
+.idea/
+*.iml
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# TypeScript 编译缓存
+*.tsbuildinfo

@@ -1,29 +1,48 @@
-# Node.js 依赖
-node_modules/
-
-# 构建产物
-dist/
-build/
-
-# 临时文件
+# === 通用忽略 ===
+.DS_Store
+Thumbs.db
 *.log
 *.tmp
 *.swp
 *.swo
 
-# 环境变量
+# === Node.js / React (webentry) ===
+node_modules/
+dist/
+build/
+*.tsbuildinfo
 .env
 .env.local
 .env.*.local
 
-# IDE/编辑器配置
+# === Unity (gamedev/Unity_dev) ===
+# Unity 生成的临时和构建文件
+gamedev/Unity_dev/[Ll]ibrary/
+gamedev/Unity_dev/[Tt]emp/
+gamedev/Unity_dev/[Oo]bj/
+gamedev/Unity_dev/[Bb]uild/
+gamedev/Unity_dev/[Bb]uilds/
+gamedev/Unity_dev/[Ll]ogs/
+gamedev/Unity_dev/[Uu]ser[Ss]ettings/
+gamedev/Unity_dev/[Mm]emoryCaptures/
+gamedev/Unity_dev/[Rr]ecordings/
+
+# Unity 自动生成的 VS/IDE 文件
+gamedev/Unity_dev/*.csproj
+gamedev/Unity_dev/*.unityproj
+gamedev/Unity_dev/*.sln
+gamedev/Unity_dev/*.suo
+gamedev/Unity_dev/*.tmp
+gamedev/Unity_dev/*.user
+gamedev/Unity_dev/*.userprefs
+
+# === PixiJS / Phaser / 其他 JS 引擎 (gamedev/xx_dev) ===
+gamedev/*_dev/node_modules/
+gamedev/*_dev/dist/
+gamedev/*_dev/build/
+gamedev/*_dev/.cache/
+
+# === IDE 配置 ===
 .vscode/
 .idea/
 *.iml
-
-# 系统文件
-.DS_Store
-Thumbs.db
-
-# TypeScript 编译缓存
-*.tsbuildinfo
